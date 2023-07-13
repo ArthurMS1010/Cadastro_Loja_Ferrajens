@@ -38,6 +38,7 @@ class funcs():
         self.conn.commit();
         print("Banco de dados criado")
         self.desconectar_banco()
+        
     def adicionar_cliente(self):
         self.variaveis()
         self.conectar_banco()
@@ -47,6 +48,7 @@ class funcs():
         self.desconectar_banco()
         self.selecionar_na_lista()
         self.limpar_a_tela()
+        
     def selecionar_na_lista(self):
         self.listaCli.delete(*self.listaCli.get_children()) ##limpar oque tem na lista
         self.conectar_banco()
@@ -184,6 +186,7 @@ class aplicacoes(funcs):
         ##Entry do valor
         self.entrada_codigo = Entry(self.frame_cima)
         self.entrada_codigo.place(relx=0.05, rely=0.80, relwidth=0.30)
+        
     def botoes_de_baixo(self):
         self.listaCli = ttk.Treeview(self.frame_baixo, height=3, columns=("col1, col2, col3, col4, col5"))
         self.listaCli.heading("#0", text="")
