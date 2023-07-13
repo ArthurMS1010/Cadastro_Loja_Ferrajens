@@ -1,7 +1,3 @@
-# Cadastro_Loja_Ferrajens
-Código em Python utilizando Tkinter com o desenvolvimento de uma aplicação para o cadastro e gerenciamento de materiais de construção de uma pequena loja.
-
-
 from tkinter import *
 from tkinter import ttk
 import sqlite3
